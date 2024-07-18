@@ -1,0 +1,93 @@
+/********************************************************************************************************/
+/*******************************Media query: Desktop y Tablet********************************************/
+/********************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@media screen and (min-width:769px) and (max-width:1500px){
+header{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding:20px;
+    position: relative; /* Asegura que el h1 se posicione correctamente */
+    z-index: 1; /* Coloca el h1 encima del fondo opaco */
+    margin: auto;
+    /* background-color:yellow; */
+  }
+  header .nav{
+    display: flex;
+    margin: auto;
+    width: 90%;
+  }
+  header .nav nav{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+  }
+   header .nav nav .navLink{
+    width: 15%;
+    text-decoration: none;
+    color: white;
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:2rem ;
+    font-weight: 600;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+  } 
+  header .nav nav .navLink:hover{
+    color:  #e2dcdc;
+  } 
+}
+/********************************************************************************************************/
+/*******************************Media query: Mobile********************************************/
+/********************************************************************************************************/
+/* @import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
+@media screen and (min-width:320px) and (max-width:768px){
+header{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding:0px;
+    position: relative; /* Asegura que el h1 se posicione correctamente */
+    z-index: 1; /* Coloca el h1 encima del fondo opaco */
+    margin: auto;
+    margin-top: 50px;
+    /* border:1px solid yellow; */
+  }
+  header .nav{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    /* border: 1px solid green; */
+  }
+  header .nav nav{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+  }
+   header .nav nav .navLink{
+    /* width: 15%; */
+    text-decoration: none;
+    color: white;
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:1.5rem ;
+    font-weight: 600;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    /* border: 1px solid red; */
+  } 
+  header .nav nav .navLink:hover{
+    color:  #e2dcdc;
+  } 
+}

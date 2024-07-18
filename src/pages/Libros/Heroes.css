@@ -1,0 +1,74 @@
+/*********************************************************************************************************/
+/*****************************Media Query: Tablet, Desktop***********************************************/
+/*********************************************************************************************************/
+@media screen and (min-width:769px) and (max-width:1500px){
+.todosLosLibros{/*Heroes.jsx*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    margin: auto;
+    margin-top:30px;
+    margin-left: 0;
+    position: relative; /* Asegura que el h1 se posicione correctamente */
+    z-index: 1; /* Coloca el h1 encima del fondo opaco */
+    padding-bottom:50px;
+    background-color: #fff;
+    /* border: 1px solid blue; */
+}
+.todosLosLibros ul{
+    width:90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    list-style: none;
+    margin: auto;
+    gap:5px;
+    padding:0px;
+    justify-content: space-around;
+    /* border: 1px solid green; */
+}
+.todosLosLibros ul li{
+    padding:0px;
+    width:40%;
+    /* height: 30%; */
+    /* border: 1px solid yellow; */
+}
+}
+/*********************************************************************************************************/
+/*****************************Media Query: Mobile***********************************************/
+/*********************************************************************************************************/
+@media screen and (min-width:320px) and (max-width:768px){
+    .todosLosLibros{/*Heroes.jsx*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width:100%;
+        margin: auto;
+        margin-top:30px;
+        margin-left: 0;
+        position: relative; /* Asegura que el h1 se posicione correctamente */
+        z-index: 1; /* Coloca el h1 encima del fondo opaco */
+        /* padding-bottom:50px; */
+        /* background-color: #fff; */
+        /* border: 1px solid blue; */
+    }
+    .todosLosLibros ul{
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        list-style: none;
+        margin: auto;
+        gap:5px;
+        padding:0px;
+        justify-content: space-around;
+        /* border: 1px solid green; */
+    }
+    .todosLosLibros ul li{
+        padding:0px;
+        width:90%;
+        /* height: 30%; */
+        /* border: 1px solid yellow; */
+    }
+    }

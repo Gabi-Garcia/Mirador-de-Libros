@@ -1,0 +1,60 @@
+/********************************************************************************************************/
+/*************************** Media query: Desktop, Tablet ************************************************/
+/*******************************************************************************************************/
+@media screen and (min-width:769px) and (max-width:1500px){
+    
+    .home {
+        position: relative; /* Para posicionar el pseudo-elemento */
+        padding: 20px; /* Espaciado interno */
+        min-height: 100vh; 
+      }
+      
+      .home h1 {
+          font-size:7rem;
+          margin:auto;
+          margin-top: 100px;
+          text-align: center;
+        position: relative; /* Asegura que el h1 se posicione correctamente */
+        z-index: 1; /* Coloca el h1 encima del fondo opaco */
+        color: #fff; /* Color del texto */
+        padding: 10px; /* Espaciado interno para el fondo*/
+      }      
+p{
+    width: 80%;
+    margin: auto;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:1.7rem;
+    margin-top: 0;
+    font-weight: 700;
+}
+}
+/********************************************************************************************************/
+/*************************** Media query: Mobile ************************************************/
+/*******************************************************************************************************/
+@media screen and (min-width:320px) and (max-width:768px){
+    .home {
+        position: relative; /* Para posicionar el pseudo-elemento */
+        padding: 20px; /* Espaciado interno */
+        min-height: 100vh; 
+      }
+      
+      .home h1 {
+          font-size:3.5rem;
+          margin:auto;
+          margin-top: 100px;
+          text-align: center;
+        position: relative; /* Asegura que el h1 se posicione correctamente */
+        z-index: 1; /* Coloca el h1 encima del fondo opaco */
+        color: #fff; /* Color del texto */
+        padding: 10px; /* Espaciado interno para el fondo*/
+        /* border: 1px solid red; */
+      }      
+p{
+    width: 80%;
+    margin: auto;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:1.7rem;
+    margin-top: 0;
+    font-weight: 700;
+}
+}

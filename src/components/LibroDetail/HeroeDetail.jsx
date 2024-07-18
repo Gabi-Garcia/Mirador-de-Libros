@@ -14,14 +14,18 @@ export const HeroeDetail = ({ heroe }) => {
           <img src={heroe.img} alt={heroe.titulo} /> 
         </div>
         <div className='detailSinopsis'> 
+          <div className='detailSinopsisH5'>
           <h5>Título: {heroe.titulo}</h5>
           <h5>Autor: {heroe.autor}</h5>
           <h5>Editorial: {heroe.editorial}</h5>
           <h5>Segmento: {heroe.segmento}</h5>
+          </div>
           <p>Sinopsis: {heroe.sinopsis}</p>
+    {/* <div className='iraLibros'>
+                  <Link to="/heroes">Ir a LIBROS</Link>
+                </div>  */}
         </div>
     </div>
-        
     </> 
   )
 }

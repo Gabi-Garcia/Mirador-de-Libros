@@ -9,9 +9,6 @@ const Home = () => {
   return (
       <div className='home'>
           <h1>Mirador de Libros</h1>        
-                <div className='iraLibros'>
-                <Link to="heroes">Ir a LIBROS</Link>
-                </div>
       </div>
   )
 }

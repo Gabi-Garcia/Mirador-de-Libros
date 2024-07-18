@@ -2,8 +2,8 @@
 import React from 'react'
 
 import { Link, Outlet } from 'react-router-dom'
-import { getHeroes} from '../api/data'
-import  HeroeDetail from '../components/HeroeDetail'
+import { getHeroes} from '../../api/data.js'
+import  HeroeDetail from '../../components/LibroDetail/HeroeDetail.jsx';
 import './Heroes.css'
 
 const Heroes = () => {
@@ -24,6 +24,9 @@ const Heroes = () => {
                 }
             </ul>
           <Outlet />
+          {/* <div className='iraLibros'>
+                  <Link to="/heroes">Ir a LIBROS</Link>
+                </div>  */}
     </div>
     </>
   )

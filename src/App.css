@@ -1,205 +1,52 @@
+
 @media screen and (min-width:769px) and (max-width:1500px){
-.App{
-  background-image: url('/Deer.png');
+.App {
+  position: relative; /* Para posicionar el pseudo-elemento */
+  padding: 20px; /* Espaciado interno */
+  background-image: url('https://img.freepik.com/foto-gratis/libros-realistas-apilados-estante_23-2151359537.jpg?size=626&ext=jpg&ga=GA1.1.1812565830.1720780701&semt=ais_user'); /* Ruta de tu imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  min-height: 100vh; /* Asegura que el contenedor cubra toda la altura de la ventana */
+  /* border: 1px solid yellow; */
 }
-header{
+
+.App::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  box-sizing: border-box;
-  padding:20px;
-}
-header .nav{
-  display: flex;
-  margin: auto;
-  width: 90%;
-  /* border: 1px solid blue; */
-}
-header .nav nav{
-  display: flex;
-  width:100%;
-  justify-content: space-between;
-  /* border: 1px solid red; */
-}
- header .nav nav .navLink{
-  width: 15%;
-  text-decoration: none;
-  color: white;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size:2rem ;
-  font-weight: 600;
-  padding: 15px;
-  text-align: center;
-  cursor: pointer;
-  /* border: 1px solid wheat; */
-} 
-header .nav nav .navLink:hover{
-  color:  #e2dcdc;
-} 
-
-footer{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width:100%;
-  margin-top:0px;
-  /* border: 1px solid blue; */
-}
-footer ul{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin: auto;
-  justify-content: space-around;
-  padding: 0;
-}
-footer ul li{
-  display: flex;
-  flex-wrap: wrap;
-}
-footer ul li a .imgFooter{
-  width:40px;
-  height:40px;
-}
-footer ul li a .imgFooter img{
-  width:100%;
-  height:100%;
-  border-radius: 5px;
-}
-footer p{
-  box-sizing: border-box;
-  width: 30%;
-  display: flex;
-  border-radius: 5px;
-  padding:2%;
-  font-size: 1.1rem;
-  margin: auto;
-  margin-top: 20px;
-  justify-content: center;
-  color: black;
-}
-}
-/* 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente oscuro */
+  z-index: 0; /* Asegura que el fondo esté detrás del contenido */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
+/***********************************************************************************************************/
+/*******************************Media Query Mobile**********************************************************/
+/***********************************************************************************************************/
 @media screen and (min-width:320px) and (max-width:768px){
-  .App{
-    background-image: url('/Deer.png');
-  }
-  header{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    box-sizing: border-box;
-    padding:25px;
+  .App {
+    position: relative; /* Para posicionar el pseudo-elemento */
+    padding: 20px; /* Espaciado interno */
+    background-image: url('https://img.freepik.com/foto-gratis/libros-realistas-apilados-estante_23-2151359537.jpg?size=626&ext=jpg&ga=GA1.1.1812565830.1720780701&semt=ais_user'); /* Ruta de tu imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    min-height: 100vh; /* Asegura que el contenedor cubra toda la altura de la ventana */
     /* border: 1px solid yellow; */
   }
-  header .nav{
-    display: flex;
-    margin: auto;
-    width: 100%;
-    padding: 5px;
-    /* border: 1px solid blue; */
-  }
-  header .nav nav{
-    display: flex;
-    width:100%;
-    justify-content: space-between;
-    /* border: 1px solid red; */
-    gap: 5px;
-  }
-   header .nav nav .navLink{
-    width:40%;
-    text-decoration: none;
-    color: white;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size:1.2rem ;
-    font-weight: 600;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    border: 1px solid wheat;
-  } 
-  header .nav nav .navLink:hover{
-    color:  #e2dcdc;
-  } 
   
-  footer{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width:100%;
-    margin-top:0px;
-    /* border: 1px solid blue; */
-  }
-  footer ul{
+  .App::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: auto;
-    justify-content: space-around;
-    padding: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente oscuro */
+    z-index: 0; /* Asegura que el fondo esté detrás del contenido */
   }
-  footer ul li{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  footer ul li a .imgFooter{
-    width:40px;
-    height:40px;
-  }
-  footer ul li a .imgFooter img{
-    width:100%;
-    height:100%;
-    border-radius: 5px;
-  }
-  footer p{
-    box-sizing: border-box;
-    width: 80%;
-    display: flex;
-    border-radius: 5px;
-    padding:4%;
-    font-size: 1.1rem;
-    margin: auto;
-    margin-top: 10px;
-    justify-content: center;
-    color: black;
-  }
+  
 }

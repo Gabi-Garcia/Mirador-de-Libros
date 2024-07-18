@@ -1,35 +1,19 @@
+/*
 @media screen and  (min-width:769px)and(max-width:1500px){
-.cadaLibro{
-    display: flex;
+.cadaLibroHeroe{
+    /* display: flex;
     margin: auto;
     margin-top: 100px;
     width: 100%;
+    transition: transform 0.4s ease, box-shadow 0.3s ease; 
     border: 2px solid wheat;
-    transition: transform 0.4s ease, box-shadow 0.3s ease;
-    border: 1px solid blue;
 } 
- .cadaLibro:hover{
+ .cadaLibroHeroe:hover{
     transform: scale(1.3);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     cursor: pointer;
 } 
-.cadaLibro .iraLibros{
-    text-decoration: none;
-    width: 30%;
-    height: 20px;
-    padding: 10px;
-    cursor: pointer;
-    margin: auto;
-    margin-left:45%;
-    margin-top:60px;
-    border: 2px solid wheat;
-    transition: transform 0.4s ease; 
-    border-radius: 20px;
-}
-.cadaLibro .iraLibros:hover{
-    transform: scale(1.1);
-    border: 2px solid wheat;
-}
+
 }
 @media screen and  (min-width:320px)and(max-width:768px){
     .cadaLibro{
